@@ -1,1 +1,1 @@
-const String appBaseUrl = "http://10.0.2.2:8080";
+const String appBaseUrl = "https://quizzy-3.onrender.com";
