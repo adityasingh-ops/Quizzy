@@ -12,7 +12,7 @@ FetchHook useFetchAllQuizes() {
   Future<void> fetchData() async{
     isLoading.value = true;
     try {
-      Uri url = Uri.parse('$appBaseUrl/api/quizzes');
+      Uri url = Uri.parse('$appBaseUrl/api/quizzes/');
       final response = await http.get(url);
       if (response.statusCode == 200) {
         quizlist.value = quizModelFromJson(response.body);

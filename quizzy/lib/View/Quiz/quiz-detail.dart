@@ -43,7 +43,7 @@ class SpecificQuizDetail extends HookWidget {
         child: Column(
           children: [
             Container(
-              height: media.width * 0.5,
+              height: 150,
               decoration: BoxDecoration(
                 gradient: LinearGradient(colors: TColor.primaryG),
                 borderRadius: BorderRadius.only(

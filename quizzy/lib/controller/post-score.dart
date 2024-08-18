@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 class postController {
   static Future<void> postQuizScore(String userId, String quizId, int score) async {
     try {
-      Uri url = Uri.parse('$appBaseUrl/api/scores');
+      Uri url = Uri.parse('$appBaseUrl/api/scores/');
       print('Posting score to: $url');
       print('Payload: ${json.encode({
         'userId': userId,
